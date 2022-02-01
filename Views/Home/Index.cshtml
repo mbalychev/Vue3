@@ -1,0 +1,162 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+
+<div id="counter">
+    Счётчик: {{ counter }}
+    {{ counter +100}}
+    <div v-bind:message="message"></div> @*передача значения в html*@
+
+    @* <p v-once>{{ message }}</p> это сообщение не изменяться *@
+    <p>Директива v-html: <span v-html="rawHtml"></span></p> @*Для вывода реального HTML необходимо использовать
+        директиву v-html*@
+    <div v-bind:id="dynamicId"></div> @*двойных фигурных скобок нельзя использовать в HTML-атрибутах. Вместо этого
+        следует использовать директиву v-bind*@
+    <button v-bind:disabled="isButtonDisabled">is disabled</button> @*Атрибут disabled будет добавляться когда значение
+        isButtonDisabled истинно.*@
+
+
+    <input v-model="input" />
+    <button v-on:click="inputUp">click</button>
+    <span v-bind:title="message">
+        Наведи на меня курсор на пару секунд,
+        чтобы увидеть динамически связанное значение title!
+    </span>
+    <p>
+        <span v-if="seen">Сейчас меня видно</span>
+    </p>
+    <ol>
+        <li v-for="todo in todos">
+            {{ todo.text }}
+        </li>
+    </ol>
+</div>
+
+<div id="todo-list-app">
+    <ol>
+        <!--
+      Теперь мы можем передать каждому компоненту todo-item объект
+      с информацией о задаче, который может динамически изменяться.
+      Также для каждого компонента определяем "key",
+      значение которого разберём далее в руководстве.
+    -->
+        <todo-item v-for="item in groceryList" v-bind:todo="item" v-bind:key="item.id"></todo-item>
+    </ol>
+</div>
+
+<ul>
+    <li>
+        <a asp-action="Data">Свойства data и методы</a>
+
+    </li>
+    <li>
+        <a asp-action="ClassVue">Работа с классами и стилями</a>
+    </li>
+    <li>
+        <a asp-action="IfView">Условная отрисовка</a>
+    </li>
+    <li>
+        <a asp-action="Lists">Отображение массива элементов</a>
+    </li>
+    <li>
+        <a asp-action="Events">Обработчики событий</a>
+    </li>
+    <li>
+        <a asp-action="Forms">Работа с формами</a>
+    </li>
+    <li>
+        <a asp-action="Comp">Основы компонентов</a>
+    </li>
+</ul>
+
+@section Scripts{
+<script>
+
+    const Counter = {
+        data() {
+            return {
+                counter: 3,
+                input: '',
+                message: 'message full',
+                seen: false,
+                todos: [
+                    { text: 'Learn JavaScript' },
+                    { text: 'Learn Vue' },
+                    { text: 'Build something awesome' }
+                ],
+                isButtonDisabled: true
+            }
+        },
+        methods: {
+            inputUp() {
+                this.input = this.input + ' ' + new Date().toLocaleString()
+            }
+        },
+        mounted() {
+            setInterval(() => {
+                this.counter++
+            }, 1000)
+        }
+    }
+
+    const vm = Vue.createApp(Counter).mount('#counter')
+
+
+
+    @* -------------------------- *@
+const TodoList = {
+        data() {
+            return {
+                groceryList: [
+                    { id: 0, text: 'Vegetables' },
+                    { id: 1, text: 'Cheese' },
+                    { id: 2, text: 'Whatever else humans are supposed to eat' }
+                ]
+            }
+        }
+    }
+
+    const app = Vue.createApp(TodoList);
+
+    app.component('todo-item', {
+        props: ['todo'],
+        template: `<li>{{ todo.text }}</li>`
+    })
+
+    app.mount('#todo-list-app')
+
+
+
+
+
+    @* ----------------------------------------------------------------------------------------------------------------------------- *@
+    const vue = Vue.createApp({
+        data() {
+            return {
+                count: 1
+            }
+
+        },
+        created() {
+            console.log('при создании екземпляра ')
+        },
+        methods() {
+
+        },
+        mounted() {
+
+        },
+        updated() {
+
+        },
+        unmounted() {
+
+        }
+    });
+</script>
+}

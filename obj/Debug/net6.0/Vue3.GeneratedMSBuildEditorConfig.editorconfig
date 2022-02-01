@@ -1,0 +1,72 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Vue3
+build_property.RootNamespace = Vue3
+build_property.ProjectDir = /home/mikhail/Документы/code/Vue3/
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = /home/mikhail/Документы/code/Vue3
+build_property._RazorSourceGeneratorDebug = 
+
+[/home/mikhail/Документы/code/Vue3/Views/Home/ClassVue.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9DbGFzc1Z1ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/mikhail/Документы/code/Vue3/Views/Home/Comp.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Db21wLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/mikhail/Документы/code/Vue3/Views/Home/Data.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9EYXRhLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/mikhail/Документы/code/Vue3/Views/Home/Events.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9FdmVudHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/mikhail/Документы/code/Vue3/Views/Home/Forms.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Gb3Jtcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/mikhail/Документы/code/Vue3/Views/Home/IfView.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JZlZpZXcuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/mikhail/Документы/code/Vue3/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/mikhail/Документы/code/Vue3/Views/Home/Lists.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9MaXN0cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/mikhail/Документы/code/Vue3/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Qcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/mikhail/Документы/code/Vue3/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0Vycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/mikhail/Документы/code/Vue3/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/mikhail/Документы/code/Vue3/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/mikhail/Документы/code/Vue3/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/mikhail/Документы/code/Vue3/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-wi5jh4z87j

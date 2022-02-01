@@ -1,0 +1,63 @@
+<div>
+    <h5>Основы компонентов</h5>
+    <a href="https://vueframework.com/docs/v3/ru/ru/guide/component-basics.html#%D0%BE%D1%80%D0%B3%D0%B0%D0%BD%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F-%D0%BA%D0%BE%D0%BC%D0%BF%D0%BE%D0%BD%D0%B5%D0%BD%D1%82%D0%BE%D0%B2"
+        target="_blank" rel="noopener noreferrer">Основы компонентов
+        #</a>
+</div>
+
+
+<div>
+
+    <div id="components-demo">
+        <button-counter></button-counter>
+        <button-counter></button-counter>
+    </div>
+
+    <div id="blog-posts-demo">
+        <blog-post v-for="post in posts" :key="post.id" :title="post.title"></blog-post>
+    </div>
+
+</div>
+
+@section Scripts
+{
+<script>
+    // Create a Vue application
+    const app = Vue.createApp({})
+
+    // Define a new global component called button-counter
+    app.component('button-counter', {
+        data() {
+            return {
+                count: 0
+            }
+        },
+        template: `
+    <button v-on:click="count++">
+      You clicked me {{ count }} times.
+    </button>`
+    })
+
+    app.mount('#components-demo')
+
+
+    const appA = Vue.createApp({
+        data() {
+            return {
+                posts: [
+                    { id: 1, title: 'My journey with Vue' },
+                    { id: 2, title: 'Blogging with Vue' },
+                    { id: 3, title: 'Why Vue is so fun' }
+                ]
+            }
+        }
+    })
+
+    appA.component('blog-post', {
+        props: ['title'],
+        template: `<h4>{{ title }}</h4>`
+    })
+
+    appA.mount('#blog-posts-demo')
+</script>
+}
